@@ -44,14 +44,14 @@ const stack = [
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
 
   <!-- Light Mode: Particles -->
-  <div class='absolute inset-0 block dark:hidden'>
+  <!-- <div class='absolute inset-0 block dark:hidden'>
     <div id='particles1' class='fixed inset-0'></div>
     <div id='particles2' class='fixed inset-0'></div>
     <div id='particles3' class='fixed inset-0'></div>
-  </div>
+  </div> -->
 
   <!-- Dark Theme: Stars -->
-  <div class='absolute inset-0 bg-black hidden dark:block'>
+  <div class='absolute inset-0 bg-black block'>
     <div id='stars1' class='fixed inset-0'></div>
     <div id='stars2' class='fixed inset-0'></div>
     <div id='stars3' class='fixed inset-0'></div>
@@ -59,7 +59,13 @@ const stack = [
 
   <!-- Dark Theme: Twinkling Stars / Metors -->
   <div id="galaxy" class="fixed inset-0">
-    <div class="hidden dark:block">
+    <div class="block">
+      <TwinklingStars/>
+      <MeteorShower/>
+      <TwinklingStars/>
+      <MeteorShower/>
+      <TwinklingStars/>
+      <MeteorShower/>
       <TwinklingStars/>
       <MeteorShower/>
     </div>
@@ -70,8 +76,8 @@ const stack = [
   <!-- HERO -->
   <section class="relative h-screen w-full">
     <div id="planetcont" class='animate absolute inset-0 top-1/4 overflow-hidden'>
-      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-black/25 dark:from-white/75 from-0% to-transparent to-5%'>
-        <div id="planet" class='w-full h-full bg-white dark:bg-black rounded-full p-[1px] overflow-hidden flex justify-center items-center'>
+      <div id="crescent" class='absolute top-0 left-1/2 -translate-x-1/2 w-[250vw] min-h-[100vh] aspect-square rounded-full p-[1px] bg-gradient-to-b from-white/75 from-0% to-transparent to-5%'>
+        <div id="planet" class='w-full h-full bg-black rounded-full p-[1px] overflow-hidden flex justify-center items-center'>
           <div class="flex justify-center items-center -translate-y-20">
             <img src="https://accessible-astro.netlify.app/astronaut-hero-img.webp" alt="Animation" class="w-80 h-80 rounded-full">
           </div>
@@ -84,8 +90,8 @@ const stack = [
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
             Hello, 我是李牧星✨
           </p>
-          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-            Welcome to my Month Party!
+          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-white'>
+            First Month Celebration
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
             2024/05/19 11:00 AM.
@@ -106,10 +112,10 @@ const stack = [
     </div>
   </section>
 
-  <div class="relative bg-white dark:bg-black">
+  <div class="relative bg-black">
     <div class="mx-auto max-w-screen-sm p-5 pb-16">
 
-      <div id="photo1" class='w-full h-full rounded-full p-[1px] overflow-hidden dark:bg-black flex justify-end items-center relative -top-24'>
+      <div id="photo1" class='w-full h-full rounded-full p-[1px] overflow-hidden bg-black flex justify-end items-center relative -top-24'>
         <div class="flex justify-center items-center">
           <img src="https://vf-image.oss-cn-beijing.aliyuncs.com/dabai/8471715918199_.pic.jpg" alt="Animation" class="w-48 h-48 rounded-full">
         </div>
@@ -122,13 +128,13 @@ const stack = [
         </div>
       </div>
 
-      <div id="photo7" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-end items-center relative -top-48 right-8'>
+      <div id="photo3" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-end items-center relative -top-48 right-8'>
         <div class="flex justify-center items-center">
           <img src="https://vf-image.oss-cn-beijing.aliyuncs.com/dabai/8401715917283_.pic.jpg" alt="Animation" class="w-48 h-48 rounded-full">
         </div>
       </div>
 
-      <div id="photo3" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-start items-center relative -top-48 left-4'>
+      <div id="photo4" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-start items-center relative -top-48 left-4'>
         <div class="flex justify-center items-center">
           <img src="https://vf-image.oss-cn-beijing.aliyuncs.com/dabai/8451715917919_.pic.jpg" alt="Animation" class="w-40 h-40 rounded-full">
         </div>
@@ -140,13 +146,13 @@ const stack = [
         </div>
       </div>
 
-      <div id="photo6" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-start items-center relative -top-72 left-16'>
+      <div id="photo6" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-center items-center relative -top-72'>
         <div class="flex justify-center items-center">
           <img src="https://vf-image.oss-cn-beijing.aliyuncs.com/dabai/8391715917215_.pic.jpg" alt="Animation" class="w-48 h-48 rounded-full">
         </div>
       </div>
 
-      <div id="photo4" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-end items-center relative -top-72 right-4'>
+      <div id="photo7" class='w-full h-full rounded-full p-[1px] overflow-hidden flex justify-end items-center relative -top-72 right-4'>
         <div class="flex justify-center items-center">
           <img src="https://vf-image.oss-cn-beijing.aliyuncs.com/dabai/8371715917135_.pic.jpg" alt="Animation" class="w-40 h-40 rounded-full">
         </div>
